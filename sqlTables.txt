@@ -1,0 +1,18 @@
+create TABLE menu(
+    itemId int AUTO_INCREMENT primary key,
+    itemName varchar(255) NOT NULL,
+    itemPrice DECIMAL(13, 4) NOT NULL,
+    description text,
+    ingredients text,
+    hasDiscount boolean,
+    discount decimal(13, 4)
+    );
+    
+INSERT INTO menu VALUES(1, 'Pizza', 14.99, 'Hawaiian Pizza', 'Ham and pineapple', false, null),(2, 'Chicken Quasidilla', 12.00, 'Chicken Quasidilla', 'Chicken, wrapping, cheese', false, null
+ );
+
+create table files(
+    fileId int AUTO_INCREMENT PRIMARY KEY,
+    fileLink varchar(255) not null,
+    fileExtension varchar(10) not null,
+    fileReadableName varchar(255));
